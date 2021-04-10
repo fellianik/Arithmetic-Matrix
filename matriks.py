@@ -2,16 +2,16 @@
 FUNCTION UNTUK PILIHAN ARITMATIKA
 '''
 # ==========================================================
-def penjumlahan():
+def penjumlahan():          #Addition function
     print("\nPenjumlahan Matriks A + B:")
     plus = []
-    jumlah = 0
+    total = 0
     for i in range(0, s):
-        plus_=[]
+        row=[]
         for j in range(0, s):
             jumlah = int(a[i][j]) + int(b[i][j])
-            plus_.append(jumlah)
-        plus.append(plus_)
+            row.append(total)
+        plus.append(row)
 
     for i in range(0, s):
         print("|\t", end='')
@@ -20,15 +20,15 @@ def penjumlahan():
         print("|")
 
 # ==============================================================
-def pengurangan():
+def pengurangan():                  #Subtraction function
     print("\nPengurangan Matriks A - B:")
     minus = []
-    jumlah = 0
+    total = 0
     for i in range(0, s):
         row=[]
         for j in range(0, s):
             jumlah = int(a[i][j]) - int(b[i][j])
-            row.append(jumlah)
+            row.append(total)
         minus.append(row)
 
     for i in range(0, s):
@@ -38,7 +38,7 @@ def pengurangan():
         print("|")
 
 # ==========================================================
-def perkalian():
+def perkalian():                #Multiplication function
     print("\nPerkalian Matriks A x B:")
     multi = []
     for i in range(0,s):
@@ -57,7 +57,7 @@ def perkalian():
         print("|")
 
 # =======================================================
-def perulangan():
+def perulangan():           #Looping function
     lanjut = input("\nIngin melanjutkan[Y/T]?")
     for i in lanjut:
         if lanjut == 'Y':
@@ -77,7 +77,7 @@ s =  ordo
 a = matriks 1
 b = matriks 2
 '''
-
+# input ordo
 s = int(input("Masukkan Ordo: "))
 a = [x[:] for x in [[0] * s] * s]
 b = [x[:] for x in [[0] * s] * s]
@@ -115,7 +115,7 @@ for i in range(0, s):
     print("|")
 
 # PERULANGAN MENU PILIHAN ARITMATIKA
-
+# Looping menu 
 lanjut='Y'
 while lanjut == 'Y':
     print("\n===============================================")
