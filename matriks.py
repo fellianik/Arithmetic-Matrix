@@ -147,3 +147,4 @@ while lanjut == 'Y':
         print("Masukkan Anda Salah!")
         print("Coba lagi!")
     
+    #CODE BY : FellianiK
