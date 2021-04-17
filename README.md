@@ -10,3 +10,4 @@ Available options are :
 With the provisions of the order n x n
 
 
+This program using Indonesian language, but there is english in the form of comments
